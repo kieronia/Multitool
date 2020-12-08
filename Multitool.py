@@ -12,7 +12,7 @@ init(convert=True)
 os.system("cls")
 os.system("title github.com/kieronia Multitool - Rebuild of tiktok.com/@misliking")
 def run(program):
-    os.system(f"{program}.py")    
+    os.system(f"python {program}.py")    
 
 
 def typeeffect(words):
@@ -38,7 +38,7 @@ def email():
 
 
 
-
+#
 def hwid():
 	print(f'{Fore.CYAN} >{Fore.WHITE} Getting Hwid')
 	try:
@@ -127,11 +127,11 @@ root.title('github.com/kieronia - Misliking Multitool Rebuild')
 
 Button(root, text='Temp Email', bg='#FFFAFA', font=('arial', 12, 'bold'), command=email).place(x=50, y=175) #command complete!
 Button(root, text='Hwid', bg='#FFFAFA', font=('arial', 12, 'bold'), command=hwid).place(x=400, y=175) #command complete! Note : This is NOT a hwid spoofer - stuff like that isn't really possible in python, but it will print your current hwid
-Button(root, text='Linkvertise Bypass', bg='#FFFAFA', font=('arial', 12, 'bold'), command=linkvertise).place(x=650, y=175)#command complete!
+Button(root, text='Linkvertise Bypass', bg='#FFFAFA', font=('arial', 12, 'bold'), command=linkvertise).place(x=650, y=175)
 #I felt smart doing this one (pretty simple but anyways) , since I've heard the linkvertise bypass in the tool didn't work, and the bypasser I've seen before had problems; https://online-coding.eu/api/LinkvertiseBypass.php?url= , I searched up linkvertise bypass and eventually found this website:https://thebypasser.com/ , this wasn't quite what I wanted as I needed an api but from monitoring the network requests, it was using someone else's api, this beauty: https://bigdonker.herokuapp.com/api?url=
 
 Button(root, text='IP Lookup', bg='#FFFAFA', font=('arial', 12, 'bold'), command=iploc).place(x=50, y=300)#command complete!
-Button(root, text='NMap Port Scanner', bg='#FFFAFA', font=('arial', 12, 'bold'), command=portsc).place(x=400, y=300)#command complete!
+Button(root, text='NMap Port Scanner', bg='#FFFAFA', font=('arial', 12, 'bold'), command=portsc).place(x=400, y=300)
 Button(root, text='Phone Number Lookup', bg='#FFFAFA', font=('arial', 12, 'bold'), command=phone).place(x=650, y=300)#command complete!
 Button(root, text='Proxy Scraper', bg='#FFFAFA', font=('arial', 12, 'bold'), command=proxies).place(x=50, y=425)#command in progress
 Button(root, text='Pinger', bg='#FFFAFA', font=('arial', 12, 'bold'), command=ping).place(x=400, y=425)#command complete!
